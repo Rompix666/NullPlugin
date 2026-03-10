@@ -1,6 +1,6 @@
 # **Null** – Твой персональный цифровой призрак 👻
 
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/nullplugin?color=00AF5C&label=Modrinth&logo=modrinth)](https://modrinth.com/plugin/nullplugin)   [![Discord](https://img.shields.io/discord/972218989235298385?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/PNp3S3sanv)   [![GitHub Issues](https://img.shields.io/github/issues/rompix666/NullPlugin?label=Issues&logo=github)](https://github.com/rompix/NullPlugin/issues)   [![Wiki](https://img.shields.io/badge/Wiki-romixerx.ru-8B0000?logo=bookstack&logoColor=white)](https://romixerx.ru/null-wiki)   [![Report](https://img.shields.io/badge/Report-Support-111111?logo=bugcrowd&logoColor=white)](https://t.me/romixsupport_bot)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/nullplugin?color=00AF5C&label=Modrinth&logo=modrinth)](https://modrinth.com/plugin/nullplugin)   [![Discord](https://img.shields.io/discord/972218989235298385?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/PNp3S3sanv)   [![GitHub Issues](https://img.shields.io/github/issues/rompix666/NullPlugin?label=Issues&logo=github)](https://github.com/rompix/NullPlugin/issues)   [![Report](https://img.shields.io/badge/Report-Support-111111?logo=bugcrowd&logoColor=white)](https://t.me/romixsupport_bot)
 
 ---
 
