@@ -1,142 +1,339 @@
-# **Null** – Твой персональный цифровой призрак 👻
+# NullPlugin
 
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/nullplugin?color=00AF5C&label=Modrinth&logo=modrinth)](https://modrinth.com/plugin/nullplugin)   [![Discord](https://img.shields.io/discord/972218989235298385?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/PNp3S3sanv)   [![GitHub Issues](https://img.shields.io/github/issues/rompix666/NullPlugin?label=Issues&logo=github)](https://github.com/rompix/NullPlugin/issues)   [![Report](https://img.shields.io/badge/Report-Support-111111?logo=bugcrowd&logoColor=white)](https://t.me/romixsupport_bot)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/nullplugin?color=00AF5C&label=Modrinth&logo=modrinth)](https://modrinth.com/plugin/nullplugin)   [![Discord](https://img.shields.io/discord/972218989235298385?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/PNp3S3sanv)   [![GitHub Issues](https://img.shields.io/github/issues/rompix666/NullPlugin?label=Issues&logo=github)](https://github.com/rompix666/NullPlugin/issues)   [![Report](https://img.shields.io/badge/Report-Support-111111?logo=bugcrowd&logoColor=white)](https://t.me/romixsupport_bot)
 
----
+![Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null Null ](https://cdn.modrinth.com/data/cached_images/b0921acb3d5252c94d2d187234341804167bb60f.png)
 
-## 🚀 **Quick Start**
+**NullPlugin** adds a mythical entity **Null** – a nameless NPC that stalks players, creates a creepy atmosphere and behaves unpredictably. Perfect for horror and survival servers.
 
-<details>
-<summary>📥 Download & Install</summary>
+## Features
 
-1. Скачай последнюю версию плагина с [Modrinth](https://modrinth.com/plugin/nullplugin) или [GitHub Releases](https://github.com/rompix/NullPlugin/releases)
-2. Помести `NullPlugin.jar` в папку `plugins/` твоего Paper-сервера (1.21 – 1.21.11)
-3. Убедись, что установлены зависимости: **Citizens** и (опционально) **WorldGuard**
-4. Перезапусти сервер или выполни `/reload confirm`
-5. Настрой плагин под себя в `plugins/NullPlugin/config.yml`
+- 🎯 **Automatic spawn** – random spawn near a player (configurable chance).
+- 👀 **Stalking** – faces the player, teleports behind them, disappears and reappears elsewhere.
+- 🧱 **World interaction** – places eerie signs (`LEAVE`, `I SEE YOU`, ...), breaks blocks, extinguishes torches.
+- 🔊 **Atmospheric effects** – ambient sounds, footsteps, heartbeat, portal, smoke and soul particles.
+- 💾 **State saving** – after server restart, Null returns to the same location.
+- ⚙️ **Flexible configuration** – every parameter (distances, chances, sounds, particles) is configurable via `config.yml`.
+- 🔌 **NPC plugin support** (since v1.0.2) – Citizens, FancyNPCs, NPC Plugin.
 
-</details>
+## Admin commands
 
----
+- `/null spawn [player]` – summon Null near yourself or the specified player.
+- `/null remove` – remove the current Null.
+- `/null reload` – reload the configuration.
+- `/null info` – show NPC status.
+- `/null target <player>` – change target.
+- `/null debug` – debug information.
+- `/null stats` – statistics (spawns, signs, destructions, teleports).
 
-## 📽️ **Video Preview**
+## Installation
 
-<details>
-<summary>🎬 Watch in action</summary>
+1. Download `NullPlugin.jar`.
+2. Place it in your server's `plugins/` folder.
+3. Install one of the supported NPC plugins (Citizens, FancyNPCs or NPC Plugin).
+4. Restart the server.
+5. Configure `config.yml` in `plugins/NullPlugin/`.
 
-> ✨ *Скоро здесь появятся видео! Следи за обновлениями.*  
-> ✨ *Coming soon – stay tuned!*
+## Dependencies
 
-</details>
+- **Required:** Citizens (before v1.0.1) / Citizens, FancyNPCs or NPC Plugin (since v1.0.2)
+- **Optional:** WorldGuard (for block build permission checks)
 
----
+## Support
 
-## 🌍 **About the Plugin**
+- Telegram: [@romixsupport_bot](https://t.me/romixsupport_bot)
+- Discord: [https://discord.gg/PNp3S3sanv](https://discord.gg/PNp3S3sanv)
+- Wiki (RU): [https://romixerx.ru/null-wiki](https://romixerx.ru/null-wiki)
+- GitHub Issues: [https://github.com/rompix/NullPlugin/issues](https://github.com/rompix/NullPlugin/issues)
 
-### 🇷🇺 **Русский**
-**Null** – это плагин, который добавляет на ваш сервер загадочную сущность из одноимённой крипипасты. Null выглядит как обычный игрок, но у него нет имени, он не отображается в списке и ведёт себя… странно. Он следит за игроками, оставляет пугающие таблички, телепортируется, издаёт жуткие звуки и исчезает с эффектом тьмы. Всё это создаёт атмосферу паранойи и мистики.
 
-| Категория | Особенности |
-|:---------:|:-----------:|
-| 👁 **Слежка** | Null всегда смотрит на игрока, преследует на расстоянии |
-| 💀 **Пугалки** | Скримеры в пещерах, эффект тьмы при исчезновении |
-| 🪧 **Таблички** | Оставляет надписи вроде "LEAVE", "I SEE YOU", которые исчезают через минуту |
-| 💥 **Разрушения** | Может ломать блоки рядом с собой (кроме бедрока и руд) |
-| 🔊 **Звуки** | Шёпот, шаги, эндермены, порталы – всё настраивается |
-| ✨ **Частицы** | Порталы, дым, драконье дыхание при телепортациях |
-| 🎮 **Команды** | Полный контроль: призвать, убрать, сменить цель, перезагрузить |
-| ⚙️ **Гибкость** | Каждый параметр настраивается в `config.yml` |
+# NullPlugin
 
-> ⚠️ *Плагин тестировался на Paper 1.21–1.21.11 и требует Citizens2.*  
-> 🍰 *В будущем планируются новые механики: квесты, система страха, интеграция с экономикой!*
+**NullPlugin** добавляет на сервер мистическую сущность **Null** – безымянного NPC, который преследует игроков, создаёт жуткую атмосферу и ведёт себя непредсказуемо. Идеально для хоррор‑ и выживани‑серверов.
 
----
+## Особенности
 
-### 🇺🇸 **English**
-**Null** is a plugin that brings a mysterious entity from a creepypasta to your server. Null looks like a regular player, but has no name, doesn't appear in the player list, and behaves… strangely. It stalks players, leaves creepy signs, teleports, makes eerie sounds, and vanishes with a darkness effect. All this creates an atmosphere of paranoia and mystery.
+- 🎯 **Автоматическое появление** – случайный спавн рядом с игроком (настраиваемый шанс).
+- 👀 **Преследование** – смотрит на игрока, телепортируется за спину, исчезает и появляется в другом месте.
+- 🧱 **Взаимодействие с миром** – ставит жуткие таблички (`LEAVE`, `I SEE YOU`, ...), разрушает блоки, гасит факелы.
+- 🔊 **Атмосферные эффекты** – эмбиент, шаги, сердцебиение, частицы порталов, дыма и душ.
+- 💾 **Сохранение состояния** – после перезагрузки сервера Null возвращается на то же место.
+- ⚙️ **Гибкие настройки** – каждый параметр (дистанции, шансы, звуки, частицы) конфигурируется через `config.yml`.
+- 🔌 **Поддержка NPC-плагинов** (с версии 1.0.2) – Citizens, FancyNPCs, NPC Plugin.
 
-| Category | Features |
-|:--------:|:--------:|
-| 👁 **Stalking** | Null always faces the player, follows at a distance |
-| 💀 **Scares** | Cave jump scares, darkness effect on disappearance |
-| 🪧 **Signs** | Leaves messages like "LEAVE", "I SEE YOU" that disappear after a minute |
-| 💥 **Destruction** | Can break blocks nearby (except bedrock and ores) |
-| 🔊 **Sounds** | Whispers, footsteps, endermen, portals – fully configurable |
-| ✨ **Particles** | Portals, smoke, dragon breath on teleports |
-| 🎮 **Commands** | Full control: spawn, remove, change target, reload |
-| ⚙️ **Flexibility** | Every parameter is adjustable in `config.yml` |
+## Команды администратора
 
-> ⚠️ *Tested on Paper 1.21–1.21.11 and requires Citizens2.*  
-> 🍰 *More mechanics coming soon: quests, fear system, economy integration!*
+- `/null spawn [игрок]` – призвать Null рядом с собой или указанным игроком.
+- `/null remove` – удалить текущего Null.
+- `/null reload` – перезагрузить конфигурацию.
+- `/null info` – показать статус NPC.
+- `/null target <игрок>` – сменить цель.
+- `/null debug` – отладочная информация.
+- `/null stats` – статистика (появления, таблички, разрушения, телепорты).
 
----
+## Установка
 
-## ✨ **Features in Action**
+1. Скачайте `NullPlugin.jar`.
+2. Поместите в папку `plugins/` сервера.
+3. Установите один из поддерживаемых NPC-плагинов (Citizens, FancyNPCs или NPC Plugin).
+4. Перезапустите сервер.
+5. Настройте `config.yml` в `plugins/NullPlugin/`.
 
-<div align="center">
+## Зависимости
 
-| Following the player | Teleport effect | Leaving signs |
-|:--:|:--:|:--:|
+- **Обязательно:** Citizens (до v1.0.1) / Citizens, FancyNPCs или NPC Plugin (начиная с v1.0.2)
+- **Опционально:** WorldGuard (для проверки прав разрушения блоков)
 
-</div>
+## Поддержка
 
-> *GIF-демонстрации будут добавлены позже / Actual GIFs coming soon*
+- Telegram: [@romixsupport_bot](https://t.me/romixsupport_bot)
+- Discord: [https://discord.gg/PNp3S3sanv](https://discord.gg/PNp3S3sanv)
+- Wiki (RU): [https://romixerx.ru/null-wiki](https://romixerx.ru/null-wiki)
+- GitHub Issues: [https://github.com/rompix/NullPlugin/issues](https://github.com/rompix/NullPlugin/issues)
 
----
+``` yaml
 
-## 📊 **Plugin Stats**
+# ============================================================
+# NullPlugin Configuration File
+# Version: 1.0.2
+# ============================================================
 
-| Statistic | Value |
-|:---------:|:-----:|
-| 📦 **Supported versions** | Paper 1.21 – 1.21.11 |
-| 🔌 **Dependencies** | Citizens (required), WorldGuard (optional) |
-| 🌐 **Languages** | English & Russian (messages customizable) |
-| 🎮 **Max concurrent Nulls** | Configurable (default 1) |
+# Language for messages: ru (Russian) or en (English)
+language: ru
 
----
+# ============================================================
+# NULL SETTINGS
+# ============================================================
+null:
+  # Enable/disable the Null myth completely
+  enabled: true
 
-## 📦 **Installation**
+  # Chance (0.0 - 1.0) for Null to spawn randomly:
+  # - on player join (with join-spawn-delay)
+  # - every 6 seconds in a periodic task
+  spawn-chance: 0.01
 
-<details>
-<summary>🔧 Detailed guide</summary>
+  # Delay after player join before possible Null spawn (ticks, 20 ticks = 1 sec)
+  join-spawn-delay: 200
 
-1. **Install Citizens** – скачай с [официального сайта](https://citizensnpcs.com) и помести в `plugins/`
-2. **Install WorldGuard** (опционально) – для защиты регионов от табличек Null
-3. **Install NullPlugin** – скачай последний релиз и положи в `plugins/`
-4. **Restart the server** – или выполни `/reload confirm`
-5. **Configure** – отредактируй `plugins/NullPlugin/config.yml` под свои предпочтения
-6. **Enjoy** – Null начнёт появляться автоматически или по команде `/null spawn`
+  # Minimum and maximum distance (blocks) from player where Null can spawn
+  spawn-min-distance: 5
+  spawn-distance: 25
 
-</details>
+  # Maximum number of Null instances allowed at once (usually 1)
+  max-instances: 1
 
----
+  # How long Null lives after spawn (seconds). Set to 0 for infinite lifetime
+  lifetime-seconds: 60
 
-## 🛠️ **Support**
+  # NPC ID assigned automatically – DO NOT MANUALLY EDIT
+  npc-id: -1
 
-Возникли проблемы? Мы поможем!
+  # Should WorldGuard be used to check block break/place permissions?
+  use-worldguard: true
 
-- 📱 **Telegram Bot**: [@romixsupport_bot](https://t.me/romixsupport_bot)
-- 💬 **Discord**: [Join our community](https://discord.com/invite/PNp3S3sanv)
-- 📖 **Wiki**: [romixerx.ru/null-wiki](https://romixerx.ru/null-wiki)
-- 🐛 **GitHub Issues**: [Report a bug](https://github.com/rompix/NullPlugin/issues)
+  # ------------------------------------------------------------
+  # Null behavior settings
+  # ------------------------------------------------------------
+  behavior:
+    # Should Null follow the target player?
+    follow-player: true
 
----
+    # Should Null teleport randomly from time to time?
+    teleport-randomly: true
 
-## ⭐ **Show Your Support**
+    # Can Null destroy blocks around itself?
+    destroy-blocks: true
 
-Если тебе нравится плагин, поддержите нас:
+    # Can Null place creepy signs?
+    place-signs: true
 
-- ⭐ Поставьте звезду на [GitHub](https://github.com/rompix/NullPlugin)
-- 📢 Расскажите друзьям
-- 🎥 Снимите видео о плагине
-- 💬 Присоединяйтесь к нашему Discord-сообществу
+    # Should Null face the player?
+    look-at-player: true
 
----
+    # Delay between teleports (seconds)
+    teleport-cooldown: 10
 
-<div align="center">
+    # Delay between placing signs / destroying blocks (seconds)
+    action-cooldown: 15
 
-**Made with ❤️ by Rompix**
+    # Distance at which Null teleports closer to player
+    follow-range-teleport: 50
 
-[⬆ Back to top](#)
+    # Distance at which Null may disappear and reappear elsewhere
+    invisible-distance: 5
 
-</div>
+    # Duration of invisibility after disappearing (ticks, 20 ticks = 1 sec)
+    invisible-duration: 60
+
+    # Number of attempts to find a valid location for spawn/teleport
+    max-teleport-attempts: 20
+
+    # Probability of teleport (0.0 - 1.0)
+    teleport-chance: 0.3
+
+    # Probability to teleport behind the player instead of nearby
+    teleport-behind-chance: 0.05
+
+    # Probability of glancing effect (appear in peripheral vision)
+    glance-chance: 0.02
+
+    # Probability to extinguish nearby torches
+    extinguish-torch-chance: 0.1
+
+    # Probability to become invisible when close to player
+    invisible-chance: 0.3
+
+    # Probability to place a creepy sign
+    sign-chance: 0.2
+
+    # Probability to destroy a random block
+    destroy-chance: 0.15
+
+    # Probability to play an ambient (scary) sound
+    ambient-sound-chance: 0.1
+
+    # Delay after which a placed sign is removed (ticks)
+    sign-remove-delay: 1200
+
+    # Delay after which an extinguished torch is restored (ticks)
+    torch-restore-delay: 80
+
+    # Duration of glancing effect (ticks)
+    glance-duration: 6
+
+    # Radius for block destruction (blocks in each direction)
+    destroy-radius: 3
+
+    # How many blocks to destroy per action
+    destroy-iterations: 3
+
+    # Radius to search for torches to extinguish (blocks)
+    torch-radius: 6
+
+    # Distance for enhanced fear effects (darkness, blindness, nausea)
+    near-effect-distance: 5.0
+
+    # Minimum and maximum distances for "near" vanish/respawn
+    near-min: 15
+    near-max: 30
+
+    # Minimum and maximum distances for random teleport
+    teleport-min: 20
+    teleport-max: 40
+
+    # Minimum and maximum distances for sign placement
+    sign-min: 5
+    sign-max: 15
+
+  # ------------------------------------------------------------
+  # Null appearance
+  # ------------------------------------------------------------
+  appearance:
+    # Skin name for the Null NPC (must exist on the server)
+    skin-name: "Nulleclipse"
+
+    # Should Null sometimes become invisible when player approaches?
+    invisible-sometimes: true
+
+    # Should particles appear when Null spawns?
+    spawn-particles: true
+
+    # Should particles appear when Null teleports?
+    teleport-particles: true
+
+    # Should particles appear when Null despawns?
+    despawn-particles: true
+
+  # ------------------------------------------------------------
+  # Signs that Null can place
+  # ------------------------------------------------------------
+  signs:
+    messages:
+      - "null"
+      - "LEAVE"
+      - "I SEE YOU"
+      - "RUN"
+
+  # ------------------------------------------------------------
+  # Null sound effects
+  # ------------------------------------------------------------
+  sounds:
+    # Enable all Null sounds?
+    enabled: true
+
+    # Enable ambient (background) sounds?
+    ambient-sounds: true
+
+    # Sound when Null teleports
+    teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+
+    # Sound when Null disappears
+    despawn-sound: "ENTITY_ILLUSIONER_MIRROR_MOVE"
+
+    # Sound when Null appears
+    spawn-sound: "ENTITY_ENDERMAN_AMBIENT"
+
+    # Sound when Null destroys a block
+    destroy-sound: "ENTITY_GENERIC_EXPLODE"
+
+    # Sound when Null places a sign
+    place-sign-sound: "BLOCK_WOOD_PLACE"
+
+    # Sound of heartbeat when player is too close
+    heartbeat-sound: "ENTITY_WARDEN_HEARTBEAT"
+
+    # List of scary sounds for ambient effect
+    ambient-scary:
+      - "AMBIENT_CAVE"
+      - "ENTITY_ENDERMAN_STARE"
+      - "ENTITY_GHAST_AMBIENT"
+      - "BLOCK_PORTAL_AMBIENT"
+      - "ENTITY_WITHER_AMBIENT"
+      - "ENTITY_ILLUSIONER_AMBIENT"
+      - "ENTITY_VEX_AMBIENT"
+      - "ENTITY_PLAYER_BREATH"
+      - "BLOCK_SCULK_SHRIEKER_SHRIEK"
+
+    # List of footstep sounds for ambient effect
+    ambient-step:
+      - "BLOCK_STONE_STEP"
+      - "BLOCK_SAND_STEP"
+      - "BLOCK_GRAVEL_STEP"
+      - "ENTITY_PLAYER_ATTACK_SWEEP"
+
+  # ------------------------------------------------------------
+  # Null particle effects
+  # ------------------------------------------------------------
+  particles:
+    # Particle type on spawn (see Bukkit Particle enum)
+    spawn: "PORTAL"
+
+    # Particle type on teleport
+    teleport: "PORTAL"
+
+    # Particle type on despawn
+    despawn: "LARGE_SMOKE"
+
+    # Number of particles to spawn at once
+    count: 20
+
+    # Particle speed / spread
+    speed: 0.1
+
+    # Offset for spawn particles (X, Y, Z)
+    spawn-offset-x: 0.5
+    spawn-offset-y: 1.0
+    spawn-offset-z: 0.5
+
+  # ------------------------------------------------------------
+  # Fear effects (darkness)
+  # ------------------------------------------------------------
+  scare:
+    # Enable darkness and fear effects?
+    enabled: true
+
+    # Duration of darkness effect when Null disappears (ticks)
+    darkness-duration: 100
+
+```
